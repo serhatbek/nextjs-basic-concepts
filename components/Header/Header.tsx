@@ -42,6 +42,15 @@ const Header = () => {
           >
             Contact
           </Link>
+
+          <Link
+            href="/login"
+            className={`py-2 px-8 hover:bg-red-500 hover:text-white  ${
+              pathname === "/login" ? "underline" : ""
+            }`}
+          >
+            Login
+          </Link>
         </div>
       </div>
     </header>
