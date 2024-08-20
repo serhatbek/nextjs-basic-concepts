@@ -8,26 +8,37 @@ const Header = () => {
     <header className="flex justify-between items-center">
       <div className="container flex justify-between max-w-7xl my-0 mx-auto">
         <div>logo</div>
-
-        <div className="flex items-center gap-16">
-          <Link href="/" className={`link ${pathname === "/" ? "active" : ""}`}>
+        <div className="flex items-center">
+          {/* underline is used instead of active class */}
+          <Link
+            href="/"
+            className={`py-2 px-8 hover:bg-red-500 hover:text-white ${
+              pathname === "/" ? "underline" : ""
+            }`}
+          >
             Home
           </Link>
           <Link
             href="/about"
-            className={`link ${pathname === "/about" ? "active" : ""}`}
+            className={`py-2 px-8 hover:bg-red-500 hover:text-white  ${
+              pathname === "/about" ? "underline" : ""
+            }`}
           >
             About
           </Link>
           <Link
             href="/blog"
-            className={`link ${pathname === "/blog" ? "active" : ""}`}
+            className={`py-2 px-8 hover:bg-red-500 hover:text-white  ${
+              pathname === "/blog" ? "underline" : ""
+            }`}
           >
             Blog
           </Link>
           <Link
             href="/contact"
-            className={`link ${pathname === "/contact" ? "active" : ""}`}
+            className={`py-2 px-8 hover:bg-red-500 hover:text-white  ${
+              pathname === "/contact" ? "underline" : ""
+            }`}
           >
             Contact
           </Link>
