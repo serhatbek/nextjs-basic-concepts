@@ -1,4 +1,4 @@
-const BlogPage = () => {
+const BlogPage = ({ searchParams }) => {
   return <div>BlogPage</div>;
 };
 
