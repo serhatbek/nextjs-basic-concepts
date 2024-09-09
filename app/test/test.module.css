@@ -1,0 +1,22 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgb(34, 31, 48);
+  padding: 20px;
+  border-radius: 16px;
+}
+
+.title {
+  color: #2b6be2;
+}
+
+.home-p {
+  color: #dfecf8;
+  font-weight: 600;
+}
+
+.test-p {
+  color: #7ce980;
+  font-weight: 600;
+}
